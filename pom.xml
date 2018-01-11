@@ -46,7 +46,7 @@
 				<apigee.org>${org}</apigee.org>
 				<apigee.username>${username}</apigee.username>
 				<apigee.password>${password}</apigee.password>
-				<apigee.options>update</apigee.options>
+				<apigee.options>${options}</apigee.options>
 				<api.northbound.domain>${org}-test.apigee.net</api.northbound.domain>
 				<api.testtag>~@wip</api.testtag>
 			</properties>
@@ -205,19 +205,6 @@
 							<executable>npm</executable>
 							<commandlineArgs>
 								install
-							</commandlineArgs>
-						</configuration>
-					</execution>
-					<execution>
-						<id>apigeelint</id>
-						<phase>validate</phase>
-						<goals>
-							<goal>exec</goal>
-						</goals>
-						<configuration>
-							<executable>node</executable>
-							<commandlineArgs>
-								node_modules/apigeelint/cli.js -s . -f table.js
 							</commandlineArgs>
 						</configuration>
 					</execution>
