@@ -9,9 +9,10 @@
     <LastModifiedAt>1515524928549</LastModifiedAt>
     <LastModifiedBy>defaultUser</LastModifiedBy>
     <Policies>
-        <Policy>DecodeBaseAuthHeaders</Policy>
-        <Policy>Extract_Token_Info</Policy>
-        <Policy>GenerateApigeeAccessToken</Policy>
+        <Policy>BA-Decode-Basic-Authentication-Headers</Policy>
+        <Policy>Extract-Token-Info</Policy>
+        <Policy>OAuthv2-GenerateApigeeAccessToken</Policy>
+        <Policy>JS-ConvertExpiresInToMilliseconds</Policy>
     </Policies>
     <ProxyEndpoints>
         <ProxyEndpoint>default</ProxyEndpoint>

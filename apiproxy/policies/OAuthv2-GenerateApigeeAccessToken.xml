@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<OAuthV2 async="false" continueOnError="false" enabled="true" name="GenerateApigeeAccessToken">
-    <DisplayName>GenerateApigeeAccessToken</DisplayName>
+<OAuthV2 async="false" continueOnError="false" enabled="true" name="OAuthv2-GenerateApigeeAccessToken">
+    <DisplayName>OAuthv2-GenerateApigeeAccessToken</DisplayName>
     <Operation>GenerateAccessToken</Operation>
     <Scope>L7AccessTokenScopeList</Scope>
     <!--The expiration will be same as the one from the backend, we can have a default expiration value just in case -->

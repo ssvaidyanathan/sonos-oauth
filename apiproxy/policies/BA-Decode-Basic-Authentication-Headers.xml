@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<BasicAuthentication name="DecodeBaseAuthHeaders">
-    <DisplayName>Decode Basic Authentication Header</DisplayName>
+<BasicAuthentication name="BA-Decode-Basic-Authentication-Headers">
+    <DisplayName>BA-Decode-Basic-Authentication-Headers</DisplayName>
     <Operation>Decode</Operation>
     <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
     <User ref="request.header.username"/>

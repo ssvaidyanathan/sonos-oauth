@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ExtractVariables async="false" continueOnError="false" enabled="true" name="Extract_Token_Info">
-    <DisplayName>Extract_Token_Info</DisplayName>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="Extract-Token-Info">
+    <DisplayName>Extract-Token-Info</DisplayName>
     <Properties/>
     <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
     <JSONPayload>

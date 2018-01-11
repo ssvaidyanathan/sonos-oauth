@@ -5,18 +5,19 @@
     <PreFlow name="PreFlow">
         <Request>
             <Step>
-                <Name>DecodeBaseAuthHeaders</Name>
+                <Name>BA-Decode-Basic-Authentication-Headers</Name>
             </Step>
         </Request>
         <Response>
             <Step>
                 <Name>Extract_Token_Info</Name>
+                <Condition>response.content != null</Condition>
             </Step>
             <Step>
                 <Name>JS-ConvertExpiresInToMilliseconds</Name>
             </Step>
             <Step>
-                <Name>GenerateApigeeAccessToken</Name>
+                <Name>OAuthv2-GenerateApigeeAccessToken</Name>
             </Step>
         </Response>
     </PreFlow>
