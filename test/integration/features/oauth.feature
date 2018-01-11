@@ -1,6 +1,4 @@
-Feature: As a API consumer
-         I want to generate an OAuth token using Password Grant type
-         so that I can make other API calls
+Feature: As a API consumer I want to generate an OAuth token using Password Grant type so that I can make other API calls
 
 	#Positive OAuth token
 	Scenario: Generate the OAuth token using valid password
