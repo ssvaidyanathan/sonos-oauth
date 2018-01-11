@@ -10,7 +10,7 @@
         </Request>
         <Response>
             <Step>
-                <Name>Extract_Token_Info</Name>
+                <Name>Extract-Token-Info</Name>
                 <Condition>response.content != null</Condition>
             </Step>
             <Step>
