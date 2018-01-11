@@ -1,5 +1,5 @@
 {
-	"name": "Sonos_OAuth-v1",
+	"name": "Sonos_OAuth",
 	"version": "1.0.0",
 	"devDependencies": {
 		"prettyjson": ">=1.1.3",
