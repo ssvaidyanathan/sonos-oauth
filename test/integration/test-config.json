@@ -1,0 +1,6 @@
+{
+	"oauth": {
+		"domain": "demo-test.apigee.net",
+		"basepath": "/auth"
+	}
+}

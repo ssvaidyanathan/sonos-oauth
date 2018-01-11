@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OAuthV2 async="false" continueOnError="false" enabled="true" name="GenerateApigeeAccessToken">
+    <DisplayName>GenerateApigeeAccessToken</DisplayName>
+    <Operation>GenerateAccessToken</Operation>
+    <Scope>L7AccessTokenScopeList</Scope>
+    <!--The expiration will be same as the one from the backend, we can have a default expiration value just in case -->
+    <ExpiresIn ref="L7AccessTokenExpirationInMills">86400000</ExpiresIn>
+    <Attributes>
+        <Attribute name="L7ResourceOwner" ref="L7ResourceOwner"/>
+    </Attributes>
+    <SupportedGrantTypes>
+        <GrantType>client_credentials</GrantType>
+        <GrantType>password</GrantType>
+    </SupportedGrantTypes>
+    <GenerateResponse enabled="true"/>
+    <StoreToken>true</StoreToken>
+    <!--Store the token from Store ID in apigee as an external token and attach it to an apigee app of an incoming request -->
+    <ExternalAccessToken>L7AccessToken</ExternalAccessToken>
+    <ExternalRefreshToken>L7RefreshToken</ExternalRefreshToken>
+    <ClientId>request.header.username</ClientId>
+</OAuthV2>

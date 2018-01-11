@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="Extract_Token_Info">
+    <DisplayName>Extract_Token_Info</DisplayName>
+    <Properties/>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <JSONPayload>
+        <Variable name="L7AccessToken">
+            <JSONPath>$.access_token</JSONPath>
+        </Variable>
+        <Variable name="L7RefreshToken">
+            <JSONPath>$.refresh_token</JSONPath>
+        </Variable>
+        <Variable name="L7AccessTokenExpiration" type="string">
+            <JSONPath>$.expires_in</JSONPath>
+        </Variable>
+        <Variable name="L7AccessTokenScopeList">
+            <JSONPath>$.scope</JSONPath>
+        </Variable>
+        <Variable name="L7ResourceOwner">
+            <JSONPath>$.resource_owner</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source clearPayload="false">response.content</Source>
+</ExtractVariables>
